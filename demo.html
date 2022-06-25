@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <legend>
+        <b>Enter the month: </b>
+    <input type="text" id="month" placeholder="Enter the month">
+    </legend>
+    <button id="01" onclick="mydemo()">Check</button>
+    
+    
+</body>
+</html>
+<script>
+    function mydemo() {
+    let a=document.getElementById("month").value;
+    if (a>12){ 
+        alert("Enter the month again")
+    }
+    
+    else if( a==1 ){
+        alert("This month has 31 days") 
+          }
+          else if( a==3 ){
+        alert("This month has 31 days") 
+          }
+          else if( a==5){
+        alert("This month has 31 days") 
+          }
+          else if( a==7 ){
+        alert("This month has 31 days") 
+          }
+          else if( a==8 ){
+        alert("This month has 31 days") 
+          }
+          else if( a==10 ){
+        alert("This month has 31 days") 
+          }
+          else if( a==12){
+        alert("This month has 31 days") 
+          }
+
+          else if( a==2 ){
+        alert("This month has 28 or 29 days" )
+          }
+        else {
+    alert("This month has 30 days")}}
+</script>
+     
