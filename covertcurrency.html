@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+       background-color: rgba(0, 0, 255, 0.623);
+        }
+    </style>
+</head>
+<body>
+    <table width="50%">
+        <th>
+    <legend>
+        <b>Amount</b> <br>
+        <input type="text" id="amount">
+    </legend>
+    </th>
+    &nbsp;
+    <th>
+    <legend>
+          <b>From Currency</b> <br>
+          <select name="FC" id="01">
+            <option value="03">Việt Nam</option>
+            <option value="04">Đồng Bảng Ai Cập</option>
+          </select>
+          
+    </legend>
+    </th>
+    &nbsp;
+    <th>
+    <legend>
+        <b>To Currency</b> <br>
+        <select name="TC" id="05">
+            <option value="06">USD</option>
+            <option value="07">EURO</option>
+        </select>
+    </legend>
+    </th>
+    <th>
+    <button onclick="mydemo()">Convert</button>
+    </th>
+    </table>
+   <p id="08"></p>
+</body>
+</html>
+<script>
+    function mydemo(){
+        let a=+document.getElementById("amount").value;
+        let b=document.getElementById("01").value;
+        let c=document.getElementById("05").value;
+        let result;
+        if (b=="03"){
+            if (c=="06"){
+                result=0.000043*a;
+            }
+            else {
+                result=0,000041*a;
+            }
+        }
+        else{
+            if (c=="06"){
+                result= 0.053*a;
+            }
+            else {
+                result=0.05*a;
+            }
+               }
+            document.getElementById("08").innerHTML="result"+"="+ result;
+            }
+ 
+</script>
