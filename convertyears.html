@@ -36,9 +36,15 @@
     </legend>
      </td>
      <td>
-    <button onclick="mydemo()">Check</button>
+        <b>Enter your name: </b>
+        <input type="text" id="03" placeholder="Enter your name: ">
     </td>
-    
+    <td>
+        <button onclick="mydemo()" >Check</button>
+        </td>
+    <td>
+        <p onmouseover="mouseover()" id="02" >Thắng đẹp try</p>
+     </td>
    </table>
 </body>
 </html>
@@ -121,6 +127,10 @@
         
         alert( "Năm Âm Lịch"+"=" + Can+ " "  + Chi);
     }
+     function mouseover(){
+        let a=getElementById("03").value;
+        document.getElementById("02").innerHTML= a+ " xấu try"
+     }
 
  
 </script>
