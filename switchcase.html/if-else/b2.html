@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <legend>
+        <b onmouseover="mouseover()" id="04">Login =</b>
+        <input type="text" id="01" onchange="mydemo()" >
+    </legend>
+    <button id="02">Check:</button> <br>
+    <p id="03"></p>
+</body>
+</html>
+<script>
+    function mydemo(){
+    let a=document.getElementById("01").value;
+    let message;
+    if(a==="employees"){
+        message="Hello";
+    }
+    else if(a==="director"){
+        message="Greeting";
+    }
+    else if(a===""){
+        message="no login";
+    }
+      else {
+        message=" "
+      }
+    document.getElementById("03").innerHTML=message;
+    }
+    function mouseover(){
+        document.getElementById("04").style.color="red"
+    }
+
+</script>
